@@ -47,4 +47,28 @@
 
 **Тесты:**
 - `test_get_books_for_children_non_age_restricted_genres` — получение списка книг для детей  
-- `test_get_books_for_children_age_restricted_genres` — проверка, что в_
+- `test_get_books_for_children_age_restricted_genres` — проверка, что возрастные книги не попадают в список  
+- `test_get_books_for_children_book_without_genre` — книги без жанра не попадают в детский список  
+
+---
+
+### Метод `add_book_in_favorites`
+
+**Тесты:**
+- `test_add_book_in_favorites_two_existent_books` — добавление нескольких существующих книг в избранное  
+- `test_add_book_in_favorites_non_existent_book` — попытка добавить несуществующую книгу в избранное  
+- `test_add_book_in_favorites_book_duplicate` — попытка добавить одну и ту же книгу несколько раз  
+
+---
+
+### Метод `delete_book_from_favorites`
+
+**Тесты:**
+- `test_delete_book_from_favorites_delete_one_book` — удаление книги из избранного  
+
+---
+
+### Метод `get_list_of_favorites`
+
+**Тесты:**
+- `test_get_list_of_favorites_books_get_list` — получение списка избранных книг
